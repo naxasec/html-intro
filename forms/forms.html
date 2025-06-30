@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>Fill the Contact form below</h1>
+    <form id="naxa" action="https://formsubmit.co/peculiarxpeculiar@gmail.com" method="post" enctype="multipart/form-data" target="_blank">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/forms/thankyou.html">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Firstname Lastname" required><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="08012345678" required><br><br>
+        <label for="age">Select your age range</label><br>
+        <input type="radio" id="age" name="age" value="18-25"><label>18-25</label><br>
+        <input type="radio" id="age" name="age" value="26-30"><label>26-30</label><br>
+        <input type="radio" id="age" name="age" value="31-35"><label>31-35</label><br>
+        <input type="radio" id="age" name="age" value="36-40"><label>36-40</label><br><br>
+        <label for="checkbox">Check boxes for states visited</label><br>
+        <input type="checkbox" id="enugu" name="state" value="Enugu"><label for="enugu">Enugu</label>
+        <input type="checkbox" id="abuja" name="state" value="Abuja"><label for="abuja">Abuja</label>
+        <input type="checkbox" id="lagos" name="state" value="Lagos"><label for="lagos">Lagos</label>
+        <input type="checkbox" id="kano" name="state" value="Kano"><label for="kano">Kano</label>
+        <input type="checkbox" id="crossriver" name="state" value="Cross-River"><label for="crossriver">Cross-River</label><br><br>
+        <label for="drop">What is your tech track?</label>
+        <select id="drop" name="tech track">
+            <option value="web dev">WD</option>
+            <option value="data analysis">DA</option>
+            <option value="product mgt">PM</option>
+            <option value="cybersecurity">CS</option>
+            <option value="AI/ML">AI/ML</option>
+        </select><br><br>
+        <label for="msg">Leave a message below</label><br>
+        <textarea id="msg" name="message" rows="4" placeholder="leave a message"></textarea><br><br>
+        <input type="submit" value="submit">
+        </form>
+</body>
+</html>
